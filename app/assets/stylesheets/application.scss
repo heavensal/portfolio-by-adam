@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ $purple: #3A2745;
+
+ body {
+  background-color: $purple !important;
+  color: white !important;
+ }
+
+ @import "bootstrap";
+
+ @import "navbar";
