@@ -14,13 +14,20 @@
  *= require_self
  */
 
- $purple: #3A2745;
+ $navbar: #3A2745;
+ $purple: #482e53;
 
  body {
   background-color: $purple !important;
   color: white !important;
+  margin:0 !important;
  }
 
  @import "bootstrap";
 
+ @import "banner";
  @import "navbar";
+ @import "footer";
+ @import "logo";
+
+ @import "accueil/profil";

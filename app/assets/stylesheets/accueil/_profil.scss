@@ -1,0 +1,9 @@
+$navbar: #3A2745;
+
+.profil-image {
+  background-image: asset-url("profil.jpg");
+  background-size: cover;
+  height: 16rem;
+  width: 16rem;
+  border-color: $navbar !important;
+}

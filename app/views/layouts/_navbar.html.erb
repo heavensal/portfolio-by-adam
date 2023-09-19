@@ -1,25 +1,35 @@
-<nav class="px-5 py-3">
+<nav class="px-5 mb-5">
   <div class="d-flex justify-content-evenly">
 
-    <div>
-      <h5><%= link_to 'Accueil', root_path %></h5>
-    </div>
+      <%= link_to root_path do %>
+        <div class="link p-3">
+          <h5>Accueil</h5>
+        </div>
+      <% end %>
 
-    <div>
-      <h5><%= link_to 'Compétences', skills_path %></h5>
-    </div>
+      <%= link_to skills_path do %>
+        <div class="link p-3">
+          <h5>Compétences</h5>
+        </div>
+      <% end %>
 
-    <div>
-      <h5><%= link_to 'Réalisations', projects_path %></h5>
-    </div>
+      <%= link_to projects_path do %>
+        <div class="link p-3">
+          <h5>Réalisations</h5>
+        </div>
+      <% end %>
 
-    <div>
-      <h5><%= link_to 'Formations', training_path %></h5>
-    </div>
+      <%= link_to training_path do %>
+        <div class="link p-3">
+          <h5>Formations</h5>
+        </div>
+      <% end %>
 
-    <div>
-      <h5><%= link_to 'A propos', about_path %></h5>
-    </div>
+      <%= link_to about_path do %>
+        <div class="link p-3">
+          <h5>A propos</h5>
+        </div>
+      <% end %>
 
   </div>
 </nav>
