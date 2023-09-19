@@ -1,9 +1,21 @@
-$navbar: #3A2745;
+$primary-bg: #1b141d;
+$secondary-bg: #231528;
+$card: #311c3a;
+$hover-card: #3a2046;
+$active-card: #422451;
+$border: #4d2a61;
+$focus-border: #61357e;
+$hover-border: #8349b6;
+$solid-bg: #8e4ec6;
+$hover-solid-bg: #9e63d5;
+$low-text: #c794f9;
+$high-text: #ecd9fa;
+
 
 .profil-image {
   background-image: asset-url("profil.jpg");
   background-size: cover;
   height: 16rem;
   width: 16rem;
-  border-color: $navbar !important;
+  border-color: $border !important;
 }

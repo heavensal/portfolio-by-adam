@@ -1,5 +1,7 @@
 #banner {
   background-image: asset-url("banner.png");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height:300px;
 }

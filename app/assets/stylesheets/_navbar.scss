@@ -1,27 +1,29 @@
-$amethyst-smoke: #a88da9;
-$rum: #7d628a;
-$bossanova: #56346a;
-$mulled-wine: #5c3f6f;
-$bossanova: #5b3770;
-$london-hue: #bda6bf;
-$jacarta: #4b336e;
-
-$primaire: #482e53;
-$secondaire: #3A2745;
+$primary-bg: #1b141d;
+$secondary-bg: #231528;
+$card: #311c3a;
+$hover-card: #3a2046;
+$active-card: #422451;
+$border: #4d2a61;
+$focus-border: #61357e;
+$hover-border: #8349b6;
+$solid-bg: #8e4ec6;
+$hover-solid-bg: #9e63d5;
+$low-text: #c794f9;
+$high-text: #ecd9fa;
 
  nav {
-  background-color: $secondaire;
+  background-color: $primary-bg;
   position: sticky;
   top: 0;
+  z-index:1000;
   // height: 80px;
 
   .link:hover {
-    background-color: $primaire;
+    background-color: $hover-solid-bg;
   }
 
   a {
     text-decoration:none;
-    color: white;
-
+    color: $high-text;
   }
  }
