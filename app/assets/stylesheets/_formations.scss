@@ -1,0 +1,95 @@
+// @import 'variables';
+
+// .timeline {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   // Responsive pour les petits écrans
+//   @media (max-width: 768px) {
+//     align-items: flex-start;
+//   }
+// }
+
+// .timeline::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 50%;
+//   width: 2px;
+//   background: $border-violet;
+//   z-index: -1;
+
+//   // Responsive pour les petits écrans
+//   @media (max-width: 768px) {
+//     left: 20px;
+//   }
+// }
+
+// .timeline-item {
+//   display: flex;
+//   flex-direction: row;
+//   width: 100%;
+//   max-width: 800px;
+//   margin: 20px 0;
+
+//   // Responsive pour les petits écrans
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//   }
+
+//   &::before {
+//     content: '';
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background: $primary-violet;
+//     position: relative;
+//     z-index: 2;
+//   }
+// }
+
+// .date {
+//   width: 20%;
+//   font-weight: bold;
+//   color: $text-primary;
+//   margin-right: 20px;
+//   text-align: right;
+
+//   // Responsive pour les petits écrans
+//   @media (max-width: 768px) {
+//     text-align: left;
+//     margin-bottom: 10px;
+//   }
+// }
+
+// .details {
+//   width: 80%;
+//   padding: 10px 20px;
+//   background: $bg-light;
+//   border-radius: 8px;
+//   position: relative;
+//   z-index: 1;
+
+//   // Titre de la formation
+//   h4 {
+//     color: $text-primary;
+//     margin-top: 0;
+//   }
+
+//   // Nom de l'institution
+//   p.institution {
+//     color: $text-on-dark;
+//   }
+
+//   // Description
+//   p.description {
+//     color: $text-primary;
+//   }
+
+//   // Responsive pour les petits écrans
+//   @media (max-width: 768px) {
+//     width: 100%;
+//   }
+// }
