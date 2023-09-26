@@ -1,0 +1,39 @@
+// Couleurs principales
+$primary-violet: #6A0DAD; // Violet foncé pour les en-têtes, le pied de page ou les zones importantes.
+$secondary-violet: #9F00C5; // Violet plus lumineux pour les accents ou les éléments d'interaction.
+
+// Couleurs d'arrière-plan
+$bg-light: #F3E8FF; // Violet très clair pour les arrière-plans ou les zones de contenu.
+$bg-dark: #4B0048; // Violet très foncé pour les arrière-plans d'en-tête ou de pied de page.
+
+// Couleurs de texte
+$text-primary: #2C0032; // Presque noir, pour le texte principal sur fond clair.
+$text-on-dark: #E1D5FF; // Violet clair pour le texte sur des arrière-plans foncés.
+
+// Couleurs d'interaction
+$hover-violet: #8300FF; // Pour les survols ou les interactions (par exemple, un bouton au survol).
+$active-violet: #4C0082; // Pour les éléments actifs ou pressés.
+
+// Autres couleurs utiles
+$border-violet: #D1B2FF; // Pour les bordures ou les diviseurs.
+$error-red: #FF004D; // Une couleur contrastante pour les erreurs ou les alertes, si nécessaire.
+
+// Couleurs principales en Dark Mode
+$primary-darkmode: $bg-light; // Utilisez le violet clair comme couleur principale
+$secondary-darkmode: $text-on-dark; // Un violet un peu plus foncé pour les accents
+
+// Couleurs d'arrière-plan en Dark Mode
+$bg-darkmode: $primary-violet; // Un violet foncé pour l'arrière-plan général
+$bg-dark-accent: $secondary-violet; // Un violet d'accent pour les en-têtes ou les sections importantes
+
+// Couleurs de texte en Dark Mode
+$text-darkmode: $bg-light; // Texte en violet clair pour une bonne lisibilité sur le violet foncé
+$text-darkmode-accent: $hover-violet; // Une couleur d'accent pour les titres ou les textes importants
+
+// Couleurs d'interaction en Dark Mode
+$hover-darkmode: $active-violet; // Une couleur un peu plus claire pour les survols
+$active-darkmode: $hover-violet; // Pour les éléments actifs ou pressés
+
+// Autres couleurs utiles en Dark Mode
+$border-darkmode: $border-violet; // Pour les bordures ou les diviseurs en mode sombre
+$error-dark-red: #FF6B85; // Un rouge plus doux pour les messages d'erreur en mode sombre

@@ -1,29 +1,37 @@
-$primary-bg: #1b141d;
-$secondary-bg: #231528;
-$card: #311c3a;
-$hover-card: #3a2046;
-$active-card: #422451;
-$border: #4d2a61;
-$focus-border: #61357e;
-$hover-border: #8349b6;
-$solid-bg: #8e4ec6;
-$hover-solid-bg: #9e63d5;
-$low-text: #c794f9;
-$high-text: #ecd9fa;
+@import 'variables';
 
  nav {
-  background-color: $primary-bg;
+
+  background-color: $bg-dark;
   position: sticky;
   top: 0;
   z-index:1000;
+  width: 100%;
+  overflow-x: auto; // Active le défilement horizontal
+  white-space: nowrap; // Empêche les éléments de passer à la ligne
+  -webkit-overflow-scrolling: touch; // Pour un défilement plus fluide sur iOS
+
+  // Masque la barre de défilement (pour une meilleure apparence)
+  &::-webkit-scrollbar {
+    display: none;
+  }
   // height: 80px;
 
   .link:hover {
-    background-color: $hover-solid-bg;
+    background-color: $hover-violet;
   }
 
   a {
     text-decoration:none;
-    color: $high-text;
+    color: $text-on-dark;
   }
+
+  scrollbar-width: none; // Pour Firefox
+
+  //   .link {
+  //     min-width: 120px; // Exemple de largeur minimale pour chaque lien
+  //   }
+  // }
+
+ // Styles pour la barre de navigation
  }
