@@ -7,31 +7,23 @@
   top: 0;
   z-index:1000;
   width: 100%;
-  overflow-x: auto; // Active le défilement horizontal
+  overflow-x:scroll; // Active le défilement horizontal
   white-space: nowrap; // Empêche les éléments de passer à la ligne
   -webkit-overflow-scrolling: touch; // Pour un défilement plus fluide sur iOS
+  scrollbar-width: none; // Pour Firefox
 
-  // Masque la barre de défilement (pour une meilleure apparence)
   &::-webkit-scrollbar {
     display: none;
   }
-  // height: 80px;
 
-  .link:hover {
-    background-color: $hover-violet;
-  }
+    a {
+      text-decoration:none;
+      color: $text-on-dark;
 
-  a {
-    text-decoration:none;
-    color: $text-on-dark;
-  }
+      &:hover {
+        background-color: $hover-violet;
+      }
+    }
 
-  scrollbar-width: none; // Pour Firefox
 
-  //   .link {
-  //     min-width: 120px; // Exemple de largeur minimale pour chaque lien
-  //   }
-  // }
-
- // Styles pour la barre de navigation
  }
