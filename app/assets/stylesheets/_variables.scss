@@ -37,3 +37,29 @@ $active-darkmode: $hover-violet; // Pour les éléments actifs ou pressés
 // Autres couleurs utiles en Dark Mode
 $border-darkmode: $border-violet; // Pour les bordures ou les diviseurs en mode sombre
 $error-dark-red: #FF6B85; // Un rouge plus doux pour les messages d'erreur en mode sombre
+
+// Base Colors
+$bg-light: #F0F5FA;  // Arrière-plan général - Convient pour les arrière-plans des sections
+$primary-light: #007BFF;  // Couleur primaire - Pour les boutons, les liens et les accents
+$secondary-light: #34D1BF;  // Couleur secondaire - Pour les boutons secondaires ou les éléments moins prioritaires
+
+// Text Colors
+$text-primary-light: #232323;  // Texte principal - Pour la majorité du texte
+$text-secondary-light: #787878;  // Texte secondaire - Pour les légendes, les métadonnées
+
+// Supporting Colors
+$accent1-light: #FF6B6B;  // Accent 1 - Bon pour les call-to-action ou les accents
+$accent2-light: #FFD166;  // Accent 2 - Pour les points saillants ou les icônes
+
+// Base Colors
+$bg-dark: #232323;  // Arrière-plan général
+$primary-dark: #66AFFF;  // Couleur primaire atténuée
+$secondary-dark: #4BC2A9;  // Couleur secondaire atténuée
+
+// Text Colors
+$text-primary-dark: #F0F5FA;  // Texte principal
+$text-secondary-dark: #B0B0B0;  // Texte secondaire
+
+// Supporting Colors
+$accent1-dark: #FF8888;  // Accent 1, légèrement atténué
+$accent2-dark: #FFDCA6;  // Accent 2, légèrement atténué

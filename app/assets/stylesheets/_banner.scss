@@ -1,9 +1,14 @@
 @import 'variables';
 
 #banner {
-  background-image: asset-url("banner.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), asset-url("banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height:300px;
+
+  h1 {
+    color: $text-primary-dark;
+  }
 }
