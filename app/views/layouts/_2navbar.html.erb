@@ -1,35 +1,38 @@
-<nav class="px-5 mb-5">
-  <div class="d-flex justify-content-evenly flex-nowrap">
-
-      <%= link_to '#banner' do %>
-        <div class="link p-3">
-          <h5>Accueil</h5>
-        </div>
-      <% end %>
-
-      <%= link_to '#skills' do %>
-        <div class="link p-3">
-          <h5>Compétences</h5>
-        </div>
-      <% end %>
-
-      <%= link_to '#projects' do %>
-        <div class="link p-3">
-          <h5>Réalisations</h5>
-        </div>
-      <% end %>
-
-      <%= link_to '#education' do %>
-        <div class="link p-3">
-          <h5>Formations</h5>
-        </div>
-      <% end %>
-
-      <%= link_to '#contact' do %>
-        <div class="link p-3">
-          <h5>Contact</h5>
-        </div>
-      <% end %>
-
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav nav">
+        <%= link_to "Accueil", '#banner' %>
+        <%= link_to 'Compétences', '#skills', class: 'nav-link' %>
+        <%= link_to 'Réalisations', '#projects', class: 'nav-link' %>
+        <%= link_to 'Formations', '#education', class: 'nav-link' %>
+        <%= link_to 'Contact', '#contact', class: 'nav-link' %>
+      </div>
+    </div>
   </div>
 </nav>
+
+<nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul class="d-flex justify-content-envenly">
+    <li><a href='#banner'>Accueil</a></li>
+    <li><a href='#skills'>Compétences</a></li>
+    <li><a href='#projects'>Réalisations</a></li>
+    <li><a href='#education'>Formations</a></li>
+    <li><a href='#contact'>Contact</a></li>
+  </ul>
+</nav>
+
+<script>
+  function updatemenu() {
+    if (document.getElementById('responsive-menu').checked == true) {
+      document.getElementById('menu').style.borderBottomRightRadius = '0';
+      document.getElementById('menu').style.borderBottomLeftRadius = '0';
+    }else{
+      document.getElementById('menu').style.borderRadius = '0px';
+    }
+  }
+</script>
