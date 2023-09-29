@@ -7,12 +7,25 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1000;
   background: linear-gradient(to bottom,  #42027A,  #7904E0);
   color: $text-primary-dark;
   min-height: 48px;
 
   button {
     display: none !important;
+    color: $text-primary-dark !important;
+
+  }
+
+  a {
+    color: $text-primary-dark;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #7904E0;
+    }
+
   }
 }
 
@@ -23,14 +36,33 @@ nav {
     justify-content: center;
     align-items: flex-start;
 
-    padding-left: 8px;
-
-    button {
-      display:inline-block !important;
+    a {
+      width: 100%;
     }
 
     div {
+      padding: 8px 0 8px 8px;
+    }
+
+    button {
+      display:inline-block !important;
+      margin: 8px;
+      font-size: 24px !important;
+    }
+
+    .responsive {
       display: none;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  a {
+    width:20%;
+    height:48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

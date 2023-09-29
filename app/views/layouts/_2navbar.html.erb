@@ -1,25 +1,27 @@
-<nav id='navbar'>
+<nav id='navbar' data-controller='navbar' class='mb-5'>
 
-  <button class='btn'>&#8801;</button>
+  <button class='btn' data-action='click->navbar#display' data-navbar-target='btn'>&#8801;</button>
+  <button class='btn d-none' data-action='click->navbar#display' data-navbar-target='btn'>&#215;
+</button>
 
-  <div class=''>
-    <%= link_to 'Accueil', '#banner' %>
-  </div>
+  <%= link_to '#banner' do %>
+    <div class='responsive' data-navbar-target='menu'>Accueil</div>
+  <% end %>
 
-  <div class=''>
-    <%= link_to 'Compétences', '#skills' %>
-  </div>
+  <%= link_to '#skills' do %>
+    <div class='responsive' data-navbar-target='menu'>Compétences</div>
+  <% end %>
 
-  <div class=''>
-    <%= link_to 'Réalisations', '#projects' %>
-  </div>
+  <%= link_to '#projects' do %>
+    <div class='responsive' data-navbar-target='menu'>Réalisations</div>
+  <% end %>
 
-  <div class=''>
-    <%= link_to 'Formations', '#education' %>
-  </div>
+  <%= link_to '#education' do %>
+    <div class='responsive' data-navbar-target='menu'>Formations</div>
+  <% end %>
 
-  <div class=''>
-    <%= link_to 'Contact', '#contact' %>
-  </div>
+  <%= link_to '#contact' do %>
+    <div class='responsive' data-navbar-target='menu'>Contact</div>
+  <% end %>
 
 </nav>

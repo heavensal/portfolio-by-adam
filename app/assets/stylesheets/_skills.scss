@@ -1,0 +1,23 @@
+@import 'variables';
+
+#skills-bar {
+
+  border: 2px solid #6A0DAD;
+  background-color: $bg-dark;
+}
+
+.progress-bar {
+  background-color:#6A0DAD !important;
+}
+
+#skillsCarousel {
+
+  .carousel-item {
+    height: 240px;
+    padding: 8px;
+  }
+
+  p {
+    padding: 8px;
+  }
+}

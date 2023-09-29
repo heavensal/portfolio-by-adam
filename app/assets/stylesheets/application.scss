@@ -16,18 +16,15 @@
 
  @import 'variables';
 
- body {
+body {
   background-color: $bg-dark!important;
   color:$text-primary-dark !important;
   margin:0 !important;
- }
+}
+
+.my-border {
+  border: 2px solid #6A0DAD;
+}
 
  @import "bootstrap";
  @import "font-awesome";
-
- @import "banner";
- @import "navbar";
- @import "footer";
- @import "logo";
-
- @import 'formations';
