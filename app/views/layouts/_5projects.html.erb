@@ -5,9 +5,10 @@
 
       <%# Projet 1 %>
       <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <img src="<%= image_path 'logo/javascript.png' %>" alt="Nom du projet 1" class="card-img-top">
-          <div class="card-body">
+        <div class="rounded-3 projects-dm">
+          <%= image_tag 'logo/javascript.png', alt: 'Nom du projet 1', width: '100%', class: 'rounded-3' %>
+
+          <div class="p-3">
             <h5 class="card-title">Nom du projet 1</h5>
             <p class="card-text">Description du projet 1. Ce projet aborde...</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -22,7 +23,7 @@
       </div>
 
       <%# Projet 2 %>
-      <div class="col-md-4">
+      <div class="col-md-4 rounded-3 projects-dm">
         <div class="card mb-4 shadow-sm">
           <img src="<%= image_path 'logo/javascript.png' %>" alt="Nom du projet 2" class="card-img-top">
           <div class="card-body">
