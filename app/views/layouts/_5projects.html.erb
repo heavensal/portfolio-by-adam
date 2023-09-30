@@ -4,23 +4,28 @@
     <div class="row">
 
       <%# Projet 1 %>
-      <div class="col-md-4">
+     <div class="col-md-4 p-3">
         <div class="rounded-3 projects-dm">
-          <%= image_tag 'logo/javascript.png', alt: 'Nom du projet 1', width: '100%', class: 'rounded-3' %>
+          <%= image_tag 'project/project_devine_le_champion.png', alt: 'Devine le Champion', width: '100%', class: 'rounded-3' %>
 
           <div class="p-3">
-            <h5 class="card-title">Nom du projet 1</h5>
-            <p class="card-text">Description du projet 1. Ce projet aborde...</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-secondary">Voir le projet</a>
-                <a href="#" class="btn btn-sm btn-outline-secondary">Code source</a>
-              </div>
-              <small class="text-muted">Technologies: HTML, CSS, Ruby</small>
+            <h5 class="card-title">Devine le Champion</h5>
+            <p class="card-text">"Devine le Champion" est un jeu web interactif inspiré de l'univers de "League of Legends". En tant que mon premier projet en développement web, j'ai conçu ce jeu pour permettre aux utilisateurs de tester leurs connaissances sur les différents champions du jeu. Grâce à une interface utilisateur intuitive, les joueurs doivent deviner le nom du champion basé sur divers indices tels que le genre, l'année d'introduction, et d'autres caractéristiques uniques. Ce projet m'a permis d'acquérir une solide expérience en HTML, CSS et JavaScript tout en explorant la logique de jeu et l'interaction utilisateur.</p>
+            <p class="">Technologies: HTML, CSS, JavaScript</p>
+
+            <div class='d-flex justify-content-center'>
+
+              <%= link_to 'Voir le site','https://heavensal.github.io/devine_le_champion/devine_le_champion.html', class: "btn-site", target:'_blank' %>
+
+              <%= link_to 'Code source', 'https://github.com/heavensal/devine_le_champion/tree/main', class: "btn-source", target:'_blank' %>
+
             </div>
           </div>
+
         </div>
       </div>
+
+
 
       <%# Projet 2 %>
       <div class="col-md-4 rounded-3 projects-dm">
