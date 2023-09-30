@@ -1,13 +1,18 @@
 @import 'variables';
 
-#skills-bar {
-
-  border: 2px solid $border-card;
-  background-color: $bg-card;
+.skills-bar-dm {
+  background-color: $bg-card-dm;
+  border: 2px solid $border-card-dm;
+  color: $text-card-dm;
 }
 
-.progress-bar {
-  background-color:#6A0DAD !important;
+.progress-dm {
+  background-color: $text-card-dm !important;
+}
+
+.progress-bar-dm {
+  background-color: $border-card-dm !important;
+  color: $text-card-dm;
 }
 
 #skillsCarousel {

@@ -15,16 +15,19 @@
  */
 
  @import 'variables';
+ @import "bootstrap";
+ @import "font-awesome";
 
 body {
-  background-color: $bg-general !important;
-  color:$text-general !important;
   margin:0 !important;
 }
 
-.my-border {
-  border: 2px solid #6A0DAD;
+.body-dm {
+  background-color: $bg-dm !important;
+  color: $text-dm !important;
 }
 
- @import "bootstrap";
- @import "font-awesome";
+.body-lm {
+  background-color: $bg-lm !important;
+  color: $text-lm !important;
+}
