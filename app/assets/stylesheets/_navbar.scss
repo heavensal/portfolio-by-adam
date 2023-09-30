@@ -8,22 +8,25 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(to bottom,  #42027A,  #7904E0);
+  background: linear-gradient(to bottom, $navbar-gradient-start, $navbar-gradient-end);
   color: $text-primary-dark;
   min-height: 48px;
 
   button {
     display: none !important;
-    color: $text-primary-dark !important;
+    color: $link-color !important;
 
   }
 
   a {
-    color: $text-primary-dark;
+    color: $link-color;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #7904E0;
+      background-color: $link-hover;
+      color: $link-text-hover;
+
     }
 
   }

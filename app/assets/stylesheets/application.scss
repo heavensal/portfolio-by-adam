@@ -17,8 +17,8 @@
  @import 'variables';
 
 body {
-  background-color: #534292 !important;
-  color:$text-primary-dark !important;
+  background-color: $bg-general !important;
+  color:$text-general !important;
   margin:0 !important;
 }
 
