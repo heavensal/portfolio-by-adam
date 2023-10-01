@@ -10,16 +10,22 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class='body-dm'>
+  <body class='body-dm' data-controller='lightdark'>
+    <header>
+      <%= render 'layouts/header/1banner' %>
+    </header>
 
-    <%= render 'layouts/1banner' %>
     <%= render 'layouts/2navbar' %>
-    <%= render 'layouts/3intro' %>
-    <%= render 'layouts/4skills' %>
-    <%= render 'layouts/5projects' %>
-    <%= render 'layouts/6education' %>
-    <%= render 'layouts/7contact' %>
-    <%= render 'layouts/8footer' %>
+
+    <main>
+      <%= render 'layouts/main/3intro' %>
+      <%= render 'layouts/main/4skills' %>
+      <%= render 'layouts/main/5projects' %>
+      <%= render 'layouts/main/6education' %>
+      <%= render 'layouts/main/7contact' %>
+    </main>
+
+    <%= render 'layouts/footer/8footer' %>
 
   </body>
 </html>

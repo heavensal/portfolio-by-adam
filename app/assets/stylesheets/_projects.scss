@@ -2,13 +2,24 @@
 
 #projects {
 
+  .project {
+    border-radius: 8px;
+  }
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
   p {
     font-size: 12px;
   }
 
   a {
-    text-decoration: none;
     width:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn-site {
@@ -16,9 +27,6 @@
     border-bottom-left-radius: 8px;
     font-size: 12px;
     height: 32px;
-
-    border: 1px solid $text-dm;
-    color: $text-dm;
   }
 
   .btn-source {
@@ -26,15 +34,6 @@
     border-bottom-right-radius: 8px;
     font-size: 12px;
     height: 32px;
-
-    border: 1px solid $text-dm;
-    color: $text-dm;
   }
 
-}
-
-.projects-dm {
-  background-color: $bg-card-dm;
-  border: 2px solid $border-card-dm;
-  color: $text-card-dm;
 }

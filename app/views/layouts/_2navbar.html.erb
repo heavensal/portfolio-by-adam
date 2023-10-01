@@ -1,8 +1,11 @@
 <nav id='navbar' data-controller='navbar' class='mb-5 nav-dm'>
 
-  <button class='btn' data-action='click->navbar#display' data-navbar-target='btn'>&#8801;</button>
-  <button class='btn d-none' data-action='click->navbar#display' data-navbar-target='btn'>&#215;
-</button>
+  <button class='btn' data-action='click->navbar#display' data-navbar-target='btn'>
+    &#8801;
+  </button>
+  <button class='btn d-none' data-action='click->navbar#display' data-navbar-target='btn'>
+    &#215;
+  </button>
 
   <%= link_to '#banner' do %>
     <div class='responsive' data-navbar-target='menu'>Accueil</div>

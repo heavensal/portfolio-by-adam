@@ -48,48 +48,13 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-
-  a {
-    width:20%;
-    height:48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.nav-dm {
-  background: linear-gradient(to bottom, $navbar-1-dm, $navbar-2-dm);
-  color: $text-dm;
-
-  button {
-    color: $text-dm !important;
-  }
-
-  a {
-    color: $text-dm;
-
-    &:hover {
-      background-color: $navbar-hover-dm;
-      color: $navbar-hover-text-dm;
-    }
-  }
-}
-
-.nav-lm {
-  background: linear-gradient(to bottom, $navbar-1-lm, $navbar-2-lm);
-  color: $text-lm;
-
-  button {
-    color: $text-lm !important;
-  }
-
-  a {
-    color: $text-lm;
-
-    &:hover {
-      background-color: $navbar-hover-lm;
-      color: $navbar-hover-text-lm;
+  nav {
+    a {
+      width:20%;
+      height:48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

@@ -1,0 +1,124 @@
+@import 'variables';
+
+body {
+  margin:0 !important;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.body-dm {
+  background-color: $bg-dm !important;
+  color: $text-dm !important;
+
+  nav {
+    background: linear-gradient(to bottom, $navbar-1-dm, $navbar-2-dm);
+    color: $text-dm;
+
+    button {
+      color: $text-dm !important;
+    }
+
+    a {
+      color: $text-dm;
+
+      &:hover {
+        background-color: $navbar-hover-dm;
+        color: $navbar-hover-text-dm;
+      }
+    }
+  }
+
+  #skills {
+
+    #skills-bar {
+      background-color: $bg-card-dm;
+      border: 2px solid $border-card-dm;
+      color: $text-card-dm;
+
+      .progress {
+        background-color: $text-card-dm !important;
+
+        .progress-bar {
+          background-color: $border-card-dm !important;
+          color: $text-card-dm;
+        }
+      }
+    }
+  }
+
+  #projects {
+    .project {
+      background-color: $bg-card-dm;
+      border: 2px solid $border-card-dm;
+      color: $text-dm;
+
+      a {
+        border: 1px solid $text-dm;
+        color: $text-dm;
+        transition: 0.3s ease;
+
+        &:hover {
+          background-color: $text-dm;
+          color: $navbar-hover-dm;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $bg-footer-dm;
+    color: $text-card-dm;
+    a {
+      color: $text-card-dm;
+    }
+  }
+}
+
+.body-lm {
+  background-color: $bg-lm !important;
+  color: $text-lm !important;
+
+  nav {
+    background: linear-gradient(to bottom, $navbar-1-lm, $navbar-2-lm);
+    color: $text-lm;
+
+    button {
+      color: $text-lm !important;
+    }
+
+    a {
+      color: $text-lm;
+
+      &:hover {
+        background-color: $navbar-hover-lm;
+        color: $navbar-hover-text-lm;
+      }
+    }
+  }
+
+  #projects {
+    .project {
+      background-color: $bg-card-lm;
+      border: 2px solid $border-card-lm;
+      color: $text-lm;
+
+      a {
+        border: 1px solid $text-lm;
+        color: $text-lm;
+        transition: 0.3s ease;
+
+        &:hover {
+          background-color: $text-lm;
+          color: $navbar-hover-lm;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $bg-footer-lm;
+    color: $text-card-lm;
+  }
+}

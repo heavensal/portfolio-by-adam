@@ -17,17 +17,3 @@
  @import 'variables';
  @import "bootstrap";
  @import "font-awesome";
-
-body {
-  margin:0 !important;
-}
-
-.body-dm {
-  background-color: $bg-dm !important;
-  color: $text-dm !important;
-}
-
-.body-lm {
-  background-color: $bg-lm !important;
-  color: $text-lm !important;
-}
