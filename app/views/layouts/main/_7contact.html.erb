@@ -1,9 +1,45 @@
 <section id="contact" class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Contactez-moi</h2>
+    <h2 class="text-center">Contactez-moi</h2>
+
+    <div class="contact-section col-md-6 mx-auto my-5 p-5 rounded-3">
+
+      <!-- Télécharger le CV -->
+      <%= link_to 'CV_Lamouri_Adam Dev web.pdf', download: '', class: "btn btn-primary mb-3" do %>
+        <i class="fas fa-file-download"></i> Télécharger mon CV
+      <% end %>
+
+      <!-- Envoyer un e-mail -->
+      <%= link_to "mailto:adamlamouri.pro@gmail.com", class: "btn btn-info mb-3" do %>
+        <i class="fas fa-envelope"></i> Envoyer un e-mail
+      <% end %>
+
+      <!-- Aller sur LinkedIn -->
+      <%= link_to "https://www.linkedin.com/in/adamlamouri/", target: "_blank", class: "btn btn-info mb-3" do %>
+        <i class="fab fa-linkedin"></i> LinkedIn
+      <% end %>
+
+      <!-- Aller sur GitHub -->
+      <%= link_to "https://github.com/heavensal", target: "_blank", class: "btn btn-dark mb-3" do %>
+        <i class="fab fa-github"></i> GitHub
+      <% end %>
+
+      <!-- Voir l'e-mail -->
+      <p class="mb-3">
+        <i class="fas fa-envelope"></i> adamlamouri.pro@gmail.com
+      </p>
+
+      <!-- Voir le numéro -->
+      <p class="mb-3">
+        <i class="fas fa-phone"></i> 06 13 67 61 79
+      </p>
+
+    </div>
+
+
 
     <!-- Formulaire de contact -->
-    <div class="row">
+    <%# <div class="row">
       <div class="col-lg-8 mx-auto">
         <form class="contact-form">
           <div class="mb-3">
@@ -24,19 +60,7 @@
           <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
       </div>
-    </div>
+    </div> %>
 
-    <!-- Liens de contact -->
-    <div class="row mt-5">
-      <div class="col-lg-8 mx-auto text-center">
-        <p class="mb-3">Ou rejoignez-moi sur :</p>
-        <a href="CV_Lamouri_Adam Dev web.pdf" class="btn btn-outline-secondary mb-3" target='_blank'>Télécharger mon CV</a>
-        <div class="d-flex justify-content-center">
-          <a href="lien_vers_votre_linkedin" class="mx-3"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:votre_email@example.com" class="mx-3"><i class="fas fa-envelope"></i></a>
-          <!-- Ajoutez d'autres icônes de réseaux sociaux si nécessaire -->
-        </div>
-      </div>
-    </div>
   </div>
 </section>

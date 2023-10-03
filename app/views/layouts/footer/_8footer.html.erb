@@ -1,6 +1,6 @@
 <footer class="footer-dm py-4">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-evenly">
       <!-- Section 1: À propos de moi -->
       <div class="col-md-4">
         <h5>À propos de moi</h5>
@@ -8,26 +8,26 @@
       </div>
 
       <!-- Section 2: Liens rapides -->
-      <div class="col-md-4">
-        <h5>Liens rapides</h5>
-        <ul class="list-unstyled">
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#education">Formation</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+
 
       <!-- Section 3: Contact & Réseaux sociaux -->
       <div class="col-md-4">
         <h5>Contactez-moi</h5>
-        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+        <p>Email: <a href='adamlamouri.pro@gmail.com'>adamlamouri.pro@gmail.com</a></p>
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+          <li class="list-inline-item"><a href="https://linkedin.com/in/adamlamouri" target="_blank">LinkedIn</a></li>
           <!-- Vous pouvez ajouter d'autres liens de réseaux sociaux ici, comme GitHub, Twitter, etc. -->
         </ul>
       </div>
+
+      <div class="col-12 col-md-2 text-end">
+        <%= link_to "#banner", class: "scroll-to-top", data: { controller: "scroll" } do %>
+          <i class="fas fa-arrow-up"></i>
+        <% end %>
+      </div>
     </div>
+
+
 
     <!-- Droits d'auteur -->
     <div class="row mt-4">

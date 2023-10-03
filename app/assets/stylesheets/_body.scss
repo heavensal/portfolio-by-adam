@@ -80,6 +80,14 @@ body {
     }
   }
 
+  #contact {
+    .contact-section {
+      background-color: $bg-card-dm;
+      border: 2px solid $border-card-dm;
+      color: $text-dm;
+    }
+  }
+
   footer {
     background-color: $bg-footer-dm;
     color: $text-card-dm;

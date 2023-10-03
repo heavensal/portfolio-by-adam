@@ -1,1 +1,21 @@
 @import 'variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+  position: fixed;
+  display: none;
+  bottom: 16px;
+  right: 16px; /* caché par défaut, puis affiché via JavaScript si désiré */
+  background-color: #4d4d4d74; /* couleur de fond */
+  color: $bg-dm !important; /* couleur de la flèche */
+  padding: 16px;
+  border-radius: 8px; /* forme circulaire */
+  transition: 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #505050; /* couleur de fond au survol */
+}
