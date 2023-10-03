@@ -5,23 +5,26 @@
     <div class="row">
 
       <%# Projet 1 %>
-      <div class="col-md-4 p-3">
+      <div class="col-md-4 p-3" data-controller="project">
         <div class="project">
           <%= image_tag 'project/project_portfolio.webp', alt: 'Projet Adam Lamouri Portfolio', title: 'Portfolio by Adam', width: '100%' %>
 
           <div class="p-3">
 
             <h5>Portfolio by Adam</h5>
-            <p>
-              Le site sur lequel vous naviguez actuellement ! Conçu comme une vitrine de mes compétences, ce portfolio a pour objectif principal d'offrir une expérience utilisateur de première qualité. La mise en place d'un mode clair et sombre, l'architecture en une seule page et la réactivité étaient des exigences essentielles pour moi, et je suis fier de les avoir réalisées.
-            </p>
-            <p>
-              J'ai été l'unique architecte, développeur et designer de ce projet. De la conception à la mise en œuvre, chaque élément a été pensé, testé et réalisé par mes soins, reflétant ainsi mon engagement à fournir le meilleur pour mes visiteurs.
-            </p>
-            <p>
-              L'un des défis majeurs que j'ai rencontrés lors de la création de ce portfolio était d'ordre esthétique. Trouver l'équilibre parfait entre fonctionnalité et esthétisme s'est avéré complexe, en particulier lors du choix des palettes de couleurs. Ce défi m'a rappelé l'importance des détails dans le design web et m'a enseigné la patience nécessaire pour arriver à un résultat qui me satisfait pleinement.
-            </p>
             <p><em>Ruby on Rails - HTML - CSS/SCSS - JS - Stimulus - Bootstrap</em></p>
+            <div class='mb-3 text-center more-info' data-action='click->project#toggle' data-project-target='more'>en savoir plus</div>
+            <div class='d-none project-info' data-action='click->project#toggle' data-project-target='info'>
+              <p>
+                Le site sur lequel vous naviguez actuellement ! Conçu comme une vitrine de mes compétences, ce portfolio a pour objectif principal d'offrir une expérience utilisateur de première qualité. La mise en place d'un mode clair et sombre, l'architecture en une seule page et la réactivité étaient des exigences essentielles pour moi, et je suis fier de les avoir réalisées.
+              </p>
+              <p>
+                J'ai été l'unique architecte, développeur et designer de ce projet. De la conception à la mise en œuvre, chaque élément a été pensé, testé et réalisé par mes soins, reflétant ainsi mon engagement à fournir le meilleur pour mes visiteurs.
+              </p>
+              <p>
+                L'un des défis majeurs que j'ai rencontrés lors de la création de ce portfolio était d'ordre esthétique. Trouver l'équilibre parfait entre fonctionnalité et esthétisme s'est avéré complexe, en particulier lors du choix des palettes de couleurs. Ce défi m'a rappelé l'importance des détails dans le design web et m'a enseigné la patience nécessaire pour arriver à un résultat qui me satisfait pleinement.
+              </p>
+            </div>
 
             <div class='d-flex justify-content-center'>
               <%= link_to 'Vous y êtes !','#', class: "btn-site" %>
@@ -33,22 +36,25 @@
         </div>
       </div>
 
-      <div class="col-md-4 p-3">
+      <div class="col-md-4 p-3" data-controller="project">
         <div class="project">
           <%= image_tag 'project/project_rheia.webp', alt: 'Rheia création de post instagram', width: '100%' %>
 
           <div class="p-3">
             <h5>RheIA</h5>
-            <p>
-              Découvrez RheIA, une innovation conçue pour transformer la manière dont les entreprises se positionnent sur Instagram. En exploitant la puissance de l'API d'OpenAI, RheIA génère automatiquement des descriptions pour Instagram, complétées par des images conceptualisées par Dall-E, le tout basé sur un simple prompt. L'ambition ? Libérer les entreprises de la contrainte temporelle des publications, leur permettant de maintenir une présence active sur les réseaux sociaux sans effort.
-            </p>
-            <p>
-              En tant que Lead développeur, ma mission était claire : superviser à la fois le back-end et le front-end, garantissant que chaque composant interagisse harmonieusement. Mais RheIA n'était pas un simple projet. Avec une équipe de trois, nous avons adopté la méthode Agile Scrum, intensifiant notre collaboration et notre créativité dans ce sprint de deux semaines. Malgré le temps imparti, le défi a été relevé avec succès.
-            </p>
-            <p>
-              RheIA n'est pas seulement fonctionnel, il incarne la concrétisation d'une vision, réalisée avec passion et précision
-            </p>
             <p><em>Ruby on Rails - HTML - CSS/SCSS - JS - Stimulus - Bootstrap</em></p>
+            <div class='mb-3 text-center more-info' data-action='click->project#toggle' data-project-target='more'>en savoir plus</div>
+            <div class='d-none project-info' data-action='click->project#toggle' data-project-target='info'>
+              <p>
+                Découvrez RheIA, une innovation conçue pour transformer la manière dont les entreprises se positionnent sur Instagram. En exploitant la puissance de l'API d'OpenAI, RheIA génère automatiquement des descriptions pour Instagram, complétées par des images conceptualisées par Dall-E, le tout basé sur un simple prompt. L'ambition ? Libérer les entreprises de la contrainte temporelle des publications, leur permettant de maintenir une présence active sur les réseaux sociaux sans effort.
+              </p>
+              <p>
+                En tant que Lead développeur, ma mission était claire : superviser à la fois le back-end et le front-end, garantissant que chaque composant interagisse harmonieusement. Mais RheIA n'était pas un simple projet. Avec une équipe de trois, nous avons adopté la méthode Agile Scrum, intensifiant notre collaboration et notre créativité dans ce sprint de deux semaines. Malgré le temps imparti, le défi a été relevé avec succès.
+              </p>
+              <p>
+                RheIA n'est pas seulement fonctionnel, il incarne la concrétisation d'une vision, réalisée avec passion et précision.
+              </p>
+            </div>
 
             <div class='d-flex justify-content-center'>
 
@@ -62,22 +68,25 @@
         </div>
       </div>
 
-      <div class="col-md-4 p-3">
+      <div class="col-md-4 p-3" data-controller="project">
         <div class="project">
           <%= image_tag 'project/project_devine_le_champion.webp', alt: 'Devine le Champion', width: '100%' %>
 
           <div class="p-3">
             <h5>Devine le Champion</h5>
-            <p>
-              Ce jeu web, mon tout premier défi en développement, a été conçu pour les passionnés désireux de mettre à l'épreuve leur connaissance des champions emblématiques de LoL. Comment cela fonctionne-t-il? C'est simple ! L'IA sélectionne aléatoirement un champion, et à l'aide d'indices variés - du genre à l'année d'introduction - vous devez identifier le bon.
-            </p>
-            <p>
-              C'est un clin d'œil à mes débuts : conçu en autodidacte après des heures passées sur YouTube, je me suis lancé dans la création de ce jeu. Avec une pointe de nostalgie, j'ai conservé dans le dépôt mon tout premier script, bien qu'il reflète davantage ma passion naissante que l'expertise que j'ai aujourd'hui.
-            </p>
-            <p>
-              La réalisation du projet n'était pas seulement un exercice technique, mais une preuve que même avec des connaissances limitées, avec détermination, on peut créer quelque chose d'amusant et fonctionnel!
-            </p>
             <p><em>HTML - CSS/SCSS - JS</em></p>
+            <div class='mb-3 text-center more-info' data-action='click->project#toggle' data-project-target='more'>en savoir plus</div>
+            <div class='d-none project-info' data-action='click->project#toggle' data-project-target='info'>
+              <p>
+                Ce jeu web, mon tout premier défi en développement, a été conçu pour les passionnés désireux de mettre à l'épreuve leur connaissance des champions emblématiques de LoL. Comment cela fonctionne-t-il? C'est simple ! L'IA sélectionne aléatoirement un champion, et à l'aide d'indices variés - du genre à l'année d'introduction - vous devez identifier le bon.
+              </p>
+              <p>
+                C'est un clin d'œil à mes débuts : conçu en autodidacte après des heures passées sur YouTube, je me suis lancé dans la création de ce jeu. Avec une pointe de nostalgie, j'ai conservé dans le dépôt mon tout premier script, bien qu'il reflète davantage ma passion naissante que l'expertise que j'ai aujourd'hui.
+              </p>
+              <p>
+                La réalisation du projet n'était pas seulement un exercice technique, mais une preuve que même avec des connaissances limitées, avec détermination, on peut créer quelque chose d'amusant et fonctionnel!
+              </p>
+            </div>
 
             <div class='d-flex justify-content-center'>
 
