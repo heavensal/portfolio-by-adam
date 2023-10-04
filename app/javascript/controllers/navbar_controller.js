@@ -7,13 +7,13 @@ export default class extends Controller {
   connect() {
   }
 
-  display() {
+  toggle() {
     this.btnTargets.forEach((btn) => {
       btn.classList.toggle('d-none');
     });
     this.menuTargets.forEach((div) => {
       div.classList.toggle('responsive');
     });
-
   }
+
 }

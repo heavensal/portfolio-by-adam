@@ -13,18 +13,35 @@
       <!-- Section 3: Contact & Réseaux sociaux -->
       <div class="col-md-4">
         <h5>Contactez-moi</h5>
-        <p>Email: <a href='adamlamouri.pro@gmail.com'>adamlamouri.pro@gmail.com</a></p>
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="https://linkedin.com/in/adamlamouri" target="_blank">LinkedIn</a></li>
-          <!-- Vous pouvez ajouter d'autres liens de réseaux sociaux ici, comme GitHub, Twitter, etc. -->
+
+          <li class='list-inline-item'>
+            <%= link_to 'mailto:adamlamouri.pro@gmail.com' do %>
+              <i class="fas fa-envelope"></i>
+            <% end %>
+          </li>
+
+          <li class="list-inline-item">
+            <%= link_to "https://linkedin.com/in/adamlamouri", target: "_blank" do %>
+              <i class="fab fa-linkedin"></i>
+            <% end %>
+          </li>
+
+          <li class="list-inline-item">
+            <%= link_to "https://github.com/heavensal", target: "_blank" do %>
+              <i class="fab fa-github"></i>
+            <% end %>
+          </li>
+
         </ul>
       </div>
 
-      <div class="col-12 col-md-2 text-end">
-        <%= link_to "#banner", class: "scroll-to-top", data: { controller: "scroll" } do %>
-          <i class="fas fa-arrow-up"></i>
-        <% end %>
-      </div>
+    </div>
+
+    <div>
+      <%= link_to "#banner", class: "scroll-to-top", data: { controller: "scroll" } do %>
+        <i class="fas fa-arrow-up"></i>
+      <% end %>
     </div>
 
 
