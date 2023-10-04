@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PortfolioByAdam</title>
+    <title>Adam Lamouri - Développeur Web</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Adam Lamouri - Développeur Web Full Stack professionnel basé à Marseille. Spécialisé en Ruby on Rails, Javascript, et bien plus. Disponible pour des projets locaux et en télétravail.">
+    <meta http-equiv="Content-Language" content="fr">
+    <meta charset="UTF-8">
+        <!-- Open Graph -->
+    <%# <meta property="og:title" content="Adam Lamouri - Développeur Web">
+    <meta property="og:description" content="Développeur Web Full Stack professionnel basé à Marseille. Spécialisé en Ruby on Rails, Javascript, et bien plus.">
+    <meta property="og:image" content="profil.jpg">
+    <meta property="og:url" content="https://www.adamlamouri.fr">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adam Lamouri - Développeur Web">
+    <meta name="twitter:description" content="Développeur Web Full Stack professionnel basé à Marseille. Spécialisé en Ruby on Rails, Javascript, et bien plus.">
+    <meta name="twitter:image" content="profil.jpg"> %>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <link rel="canonical" href="https://www.adamlamouri.fr">
+
+    <%= render 'application/favicon' %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
