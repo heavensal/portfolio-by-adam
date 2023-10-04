@@ -86,8 +86,11 @@ body {
       background-color: $bg-card-dm;
       border: 2px solid $border-card-dm;
       color: $text-dm;
+        a {
+          color: $text-dm;
+        }
+      }
     }
-  }
 
   footer {
     background-color: $bg-footer-dm;
