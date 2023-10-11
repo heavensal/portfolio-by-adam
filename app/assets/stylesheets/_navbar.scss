@@ -35,7 +35,7 @@ nav {
   transition: border 0.3s ease;
   transition: rotate 1s ease;
   &:hover {
-    rotate: 360deg;
+    animation: rotate 1s linear infinite;
     border: 1px solid white;
   }
 }
@@ -62,19 +62,23 @@ nav {
 }
 
 #responsive-menu {
-  min-width: 100vw;
   position: absolute;
-  top: auto; /* ou là où tu veux qu'il commence */
+  top: auto;
   z-index: 1000;
-  opacity: 0;                // L'élément est totalement transparent.
-  visibility: hidden;        // L'élément est invisible et ne prend pas de place dans le rendu de la page.
-  transition: opacity 0.5s, visibility 0.5s;  // Indique que les propriétés `opacity` et `visibility` doivent subir une transition lorsqu'elles changent.
+  opacity: 0;
+  visibility: hidden;
+  width: 100vw;             // Fixe la largeur à 100vw
+  overflow: hidden;
+  transform-origin: top;   // Commence l'animation depuis la gauche
+  transform: scaleY(0);     // Échelle horizontale réduite à 0
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
 }
 
 #responsive-menu.show {
+  transform: scaleY(1);
   opacity: 1;                // L'élément est totalement opaque (visible).
   visibility: visible;      // L'élément est visible.
-  transition: opacity 0.5s, visibility 0.5s;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,4 +95,13 @@ nav {
     display: none;
   }
 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
