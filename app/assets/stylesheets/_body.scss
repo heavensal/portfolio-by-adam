@@ -8,6 +8,10 @@ body {
   }
 }
 
+#responsive-menu {
+  background: linear-gradient(to bottom, $navbar-2-lm, $navbar-1-lm)
+}
+
 .body-dm {
   // background: $bg-dm !important;
   background: linear-gradient(to bottom, $bg-dm 50%, $bg-footer-dm 75%) !important;
@@ -16,6 +20,7 @@ body {
   nav {
     background: linear-gradient(to bottom, $navbar-1-lm, $navbar-2-lm);
     color: $text-dm;
+
 
     button {
       color: $text-dm !important;
@@ -124,7 +129,7 @@ body {
   }
 
   .profile-image {
-    border: 2px solid $border-card-lm;
+    box-shadow: 0px 0px 8px 0px #3a0b9d;
   }
 
   #skills {

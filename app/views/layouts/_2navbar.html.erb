@@ -1,30 +1,42 @@
-<nav id='navbar' data-controller='navbar' class='mb-5 nav-dm'>
+<nav id="navbar-bigger" role="navigation" aria-label="Barre de Navigation">
 
-  <button class='btn' data-action='click->navbar#toggle' data-navbar-target='btn'>
-    &#8801;
-  </button>
-  <button class='btn d-none' data-action='click->navbar#toggle' data-navbar-target='btn'>
-    &#215;
-  </button>
+  <ul>
+    <li><%= link_to "Compétences", "#skills", aria: { label: "Compétences" } %></li>
+    <li><%= link_to "Réalisations", "#projects", aria: { label: "Réalisations" } %></li>
+    <li><%= link_to "Formations", "#education", aria: { label: "Formations" } %></li>
+    <li><%= link_to "Contact", "#contact", aria: { label: "Contact" } %></li>
 
-  <%= link_to '#banner' do %>
-    <div class='responsive' data-navbar-target='menu'>Accueil</div>
-  <% end %>
+    <li class='dark-lang'>
+      <%# <button class="lang" aria-label="Langage Anglais">EN</button>
+      <button class="lang" aria-label="Langage Espagnol">ES</button> %>
+      <button id='darkmode-big' class="icon" aria-label="Mode sombre et lumineux" data-action='click->lightdark#transform'><i class="fas fa-moon"></i></button>
+    </li>
+  </ul>
 
-  <%= link_to '#skills' do %>
-    <div class='responsive' data-navbar-target='menu'>Compétences</div>
-  <% end %>
+</nav>
 
-  <%= link_to '#projects' do %>
-    <div class='responsive' data-navbar-target='menu'>Réalisations</div>
-  <% end %>
+<nav id='navbar-smaller' data-controller="navbar">
 
-  <%= link_to '#education' do %>
-    <div class='responsive' data-navbar-target='menu'>Formations</div>
-  <% end %>
+  <section id='responsive-icons'>
+    <button id='nav-icon' class='icon' data-navbar-target="btn" data-action='click->navbar#toggle'>
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-  <%= link_to '#contact' do %>
-    <div class='responsive' data-navbar-target='menu'>Contact</div>
-  <% end %>
+    <button id='nav-icon' class='icon d-none' data-navbar-target="btn" data-action='click->navbar#toggle'>
+      <i class="fa-solid fa-x"></i>
+    </button>
+
+    <div class='dark-lang'>
+      <button id='darkmode-small' class="icon" aria-label="Mode sombre et lumineux" data-action='click->lightdark#transform'><i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </section>
+
+  <ul id='responsive-menu' data-navbar-target='menu' class='d-none'>
+    <li class=''><%= link_to "Compétences", "#skills", aria: { label: "Compétences" } %></li>
+    <li class=''><%= link_to "Réalisations", "#projects", aria: { label: "Réalisations" } %></li>
+    <li class=''><%= link_to "Formations", "#education", aria: { label: "Formations" } %></li>
+    <li class=''><%= link_to "Contact", "#contact", aria: { label: "Contact" } %></li>
+  </ul>
 
 </nav>

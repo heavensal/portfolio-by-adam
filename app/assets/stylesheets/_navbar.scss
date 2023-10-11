@@ -1,58 +1,94 @@
-nav {
+/* Style de la navbar */
 
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+nav {
   position: sticky;
   top: 0;
+  z-index: 100;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+      a {
+        display: block;
+        padding: 14px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+  }
+}
+
+.dark-lang {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+
+.icon{
+  background-color: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 8px 0 8px;
+  width: 32px; /* Largeur fixe */
+  height: 32px; /* Hauteur fixe *//* Marge en bas pour éviter de toucher la navbar */
+  border: 0px solid transparent;
+  transition: border 0.3s ease;
+  transition: rotate 1s ease;
+  &:hover {
+    rotate: 360deg;
+    border: 1px solid white;
+  }
+}
+
+#navbar-bigger {
+  ul {
+   display: flex;
+   justify-content: space-evenly;
+
+   li {
+    flex: 1;
+    a {
+      text-align: center;
+     }
+   }
+  }
+}
+
+#responsive-icons {
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#responsive-menu {
+  min-width: 100vw;
+  position: absolute;
+  top: auto; /* ou là où tu veux qu'il commence */
   z-index: 1000;
-  min-height: 48px;
+  opacity: 0;                // L'élément est totalement transparent.
+  visibility: hidden;        // L'élément est invisible et ne prend pas de place dans le rendu de la page.
+  transition: opacity 0.5s, visibility 0.5s;  // Indique que les propriétés `opacity` et `visibility` doivent subir une transition lorsqu'elles changent.
+}
 
-  button {
-    display: none !important;
-  }
-
-  a {
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
+#responsive-menu.show {
+  opacity: 1;                // L'élément est totalement opaque (visible).
+  visibility: visible;      // L'élément est visible.
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    a {
-      width: 100%;
-    }
-
-    div {
-      padding: 8px 0 8px 8px;
-    }
-
-    button {
-      display:inline-block !important;
-      margin: 8px;
-      font-size: 24px !important;
-    }
-
-    .responsive {
-      display: none;
-    }
+  /* Affiche l'icône de menu */
+  #navbar-bigger {
+    display: none;
   }
+
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    a {
-      width:20%;
-      height:48px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  /* Affiche l'icône de menu */
+  #navbar-smaller {
+    display: none;
   }
+
 }
