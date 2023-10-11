@@ -14,7 +14,7 @@ body {
   color: $text-dm !important;
 
   nav {
-    background: linear-gradient(to bottom, $navbar-1-dm, $navbar-2-dm);
+    background: linear-gradient(to bottom, $navbar-1-lm, $navbar-2-lm);
     color: $text-dm;
 
     button {
@@ -102,8 +102,8 @@ body {
 }
 
 .body-lm {
-  background-color: $bg-lm !important;
-  color: $text-lm !important;
+  // background-color: $bg-lm !important;
+  // color: $text-lm !important;
 
   nav {
     background: linear-gradient(to bottom, $navbar-1-lm, $navbar-2-lm);
@@ -123,27 +123,66 @@ body {
     }
   }
 
-  #projects {
-    .project {
-      background-color: $bg-card-lm;
-      border: 2px solid $border-card-lm;
-      color: $text-lm;
+  .profile-image {
+    border: 2px solid $border-card-lm;
+  }
 
-      a {
-        border: 1px solid $text-lm;
-        color: $text-lm;
-        transition: 0.3s ease;
+  #skills {
 
-        &:hover {
-          background-color: $text-lm;
-          color: $navbar-hover-lm;
+    #skills-bar {
+      box-shadow: 0px 0px 8px 0px #3a0b9d;
+
+      .progress {
+        background-color: #b8b8b8 !important;
+
+        .progress-bar {
+          background-color: $navbar-2-lm !important;
         }
       }
     }
   }
 
+  #projects {
+    .project {
+      // background-color: $bg-card-lm;
+      box-shadow: 0px 0px 8px 0px #3a0b9d;
+      background-color: #d5d5d59a;
+
+      a {
+        border: 1px solid #6c757d;
+        transition: 0.3s ease;
+        color: #6c757d;
+
+        &:hover {
+          background-color: #6c757d;
+          color: white;
+        }
+      }
+    }
+  }
+
+  #education {
+    .formation {
+      background-color: #d5d5d59a;
+      box-shadow: 0px 0px 8px 0px #3a0b9d;
+    }
+  }
+
+  #contact {
+    .contact-section {
+      background-color: #d5d5d59a;
+      box-shadow: 0px 0px 8px 0px #3a0b9d;
+        a {
+          color: rgb(16, 15, 15);
+        }
+      }
+    }
+
   footer {
-    background-color: $bg-footer-lm;
-    color: $text-card-lm;
+    background-color: $bg-footer-dm;
+    color: $text-card-dm;
+    a {
+      color: $text-card-dm;
+    }
   }
 }
