@@ -5,6 +5,7 @@ export default class extends Controller {
   // Cette méthode est appelée lorsque le contrôleur est initialisé
   connect() {
     this.loadTheme();
+    document.body.style.visibility = "visible";
   }
 
   // Basculer entre les thèmes et sauvegarder le choix de l'utilisateur
