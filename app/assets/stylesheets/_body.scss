@@ -107,14 +107,14 @@ body {
 
   nav {
     background: linear-gradient(to bottom, $navbar-1-lm, $navbar-2-lm);
-    color: $text-lm;
+    color: $navbar-hover-text-lm;
 
     button {
-      color: $text-lm !important;
+      color: $navbar-hover-text-lm !important;
     }
 
     a {
-      color: $text-lm;
+      color: $navbar-hover-text-lm;
 
       &:hover {
         background-color: $navbar-hover-lm;
