@@ -158,15 +158,14 @@ body {
     .project {
       // background-color: $bg-card-lm;
       box-shadow: 0px 0px 8px 0px #3a0b9d;
-      background-color: #d5d5d59a;
 
       a {
-        border: 1px solid #6c757d;
+        border: 1px solid #3F4246;
         transition: 0.3s ease;
-        color: #6c757d;
+        color: #3F4246;
 
         &:hover {
-          background-color: #6c757d;
+          background-color: #3F4246;
           color: white;
         }
       }
