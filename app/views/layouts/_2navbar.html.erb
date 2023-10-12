@@ -15,14 +15,14 @@
 
 </nav>
 
-<nav id='navbar-smaller' data-controller="navbar">
+<nav id='navbar-smaller' data-controller="navbar" role="navigation-téléphone" aria-label="Barre de Navigation sur téléphone">
 
   <section id='responsive-icons'>
-    <button id='nav-icon' class='icon' data-navbar-target="btn" data-action='click->navbar#toggle'>
+    <button id='nav-icon-open' class='icon' aria-label="Ouverture menu" data-navbar-target="btn" data-action='click->navbar#toggle'>
       <i class="fa-solid fa-bars"></i>
     </button>
 
-    <button id='nav-icon' class='icon d-none' data-navbar-target="btn" data-action='click->navbar#toggle'>
+    <button id='nav-icon-close' class='icon d-none' aria-label="Fermeture menu" data-navbar-target="btn" data-action='click->navbar#toggle'>
       <i class="fa-solid fa-x"></i>
     </button>
 
@@ -33,10 +33,10 @@
   </section>
 
   <ul id='responsive-menu' data-navbar-target='menu' class='d-none'>
-    <li class=''><%= link_to "Compétences", "#skills", aria: { label: "Compétences" } %></li>
-    <li class=''><%= link_to "Réalisations", "#projects", aria: { label: "Réalisations" } %></li>
-    <li class=''><%= link_to "Formations", "#education", aria: { label: "Formations" } %></li>
-    <li class=''><%= link_to "Contact", "#contact", aria: { label: "Contact" } %></li>
+    <li><%= link_to "Compétences", "#skills", aria: { label: "Compétences" } %></li>
+    <li><%= link_to "Réalisations", "#projects", aria: { label: "Réalisations" } %></li>
+    <li><%= link_to "Formations", "#education", aria: { label: "Formations" } %></li>
+    <li><%= link_to "Contact", "#contact", aria: { label: "Contact" } %></li>
   </ul>
 
 </nav>

@@ -16,25 +16,25 @@
         <ul class="list-inline">
 
           <li class='list-inline-item'>
-            <%= link_to 'mailto:adamlamouri.pro@gmail.com' do %>
+            <%= link_to 'mailto:adamlamouri.pro@gmail.com', aria: { label: "Mail" } do %>
               <i class="fas fa-envelope"></i>
             <% end %>
           </li>
 
           <li class="list-inline-item">
-            <%= link_to "https://linkedin.com/in/adamlamouri", target: "_blank" do %>
+            <%= link_to "https://linkedin.com/in/adamlamouri",aria: { label: "Linkedin" }, target: "_blank" do %>
               <i class="fab fa-linkedin"></i>
             <% end %>
           </li>
 
           <li class="list-inline-item">
-            <%= link_to "https://github.com/heavensal", target: "_blank" do %>
+            <%= link_to "https://github.com/heavensal",aria: { label: "Github" }, target: "_blank" do %>
               <i class="fab fa-github"></i>
             <% end %>
           </li>
 
           <li class="list-inline-item">
-            <%= link_to 'cv_adam_lamouri_dl.pdf', download: '' do %>
+            <%= link_to 'cv_adam_lamouri_dl.pdf', aria: { label: "Curriculum Vitae Adam" }, download: '' do %>
               <i class="fas fa-file-download"></i>
             <% end %>
           </li>
@@ -45,7 +45,7 @@
     </div>
 
     <div>
-      <%= link_to "#banner", class: "scroll-to-top", data: { controller: "scroll" } do %>
+      <%= link_to "#banner", class: "scroll-to-top", aria: { label: "Revenir en haut" }, data: { controller: "scroll" } do %>
         <i class="fas fa-arrow-up"></i>
       <% end %>
     </div>
