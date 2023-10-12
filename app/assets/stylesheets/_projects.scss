@@ -16,11 +16,13 @@
 
   .project {
     border-radius: 8px;
+    overflow:hidden;
   }
 
   img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    object-position: center;
   }
 
   p {

@@ -7,7 +7,24 @@
       <%# Projet 1 %>
       <div class="col-md-4 p-3" data-controller="project">
         <div class="project">
-          <%= image_tag 'project/project_portfolio.webp', alt: 'Projet Adam Lamouri Portfolio', title: 'Portfolio by Adam', width: '100%' %>
+          <%= image_tag 'project/portfolio_508.webp',
+              srcset: {
+                asset_path('project/portfolio_208.webp') => '208w',
+                asset_path('project/portfolio_288.webp') => '288w',
+                asset_path('project/portfolio_348.webp') => '348w',
+                asset_path('project/portfolio_408.webp') => '408w',
+                asset_path('project/portfolio_508.webp') => '508w',
+                asset_path('project/portfolio_544.webp') => '544w'
+              },
+              sizes: '(max-width: 575px) 544px,
+                      (max-width: 767px) 508px,
+                      (min-width: 768px) and (max-width: 992px) 208px,
+                      (min-width: 992px) and (max-width: 1200px) 288px,
+                      (min-width: 1200px) and (max-width: 1399px) 348px,
+                      (min-width: 1400px) 408px',
+              alt: 'Projet Adam Lamouri Portfolio',
+              title: 'Portfolio by Adam' %>
+
 
           <div class="p-3">
 
@@ -38,7 +55,24 @@
 
       <div class="col-md-4 p-3" data-controller="project">
         <div class="project">
-          <%= image_tag 'project/project_rheia.webp', alt: 'Rheia création de post instagram', width: '100%' %>
+          <%= image_tag 'project/rheia_508.webp',
+              srcset: {
+                asset_path('project/rheia_208.webp') => '208w',
+                asset_path('project/rheia_288.webp') => '288w',
+                asset_path('project/rheia_348.webp') => '348w',
+                asset_path('project/rheia_408.webp') => '408w',
+                asset_path('project/rheia_508.webp') => '508w',
+                asset_path('project/rheia_544.webp') => '544w'
+              },
+              sizes: '(max-width: 575px) 544px,
+                      (max-width: 767px) 508px,
+                      (min-width: 768px) and (max-width: 992px) 208px,
+                      (min-width: 993px) and (max-width: 1200px) 288px,
+                      (min-width: 1201px) and (max-width: 1399px) 348px,
+                      (min-width: 1400px) 408px',
+              alt: 'Rheia création de post instagram',
+              title: 'Création de post Instagram par Rheia' %>
+
 
           <div class="p-3">
             <h4>RheIA</h4>
@@ -70,7 +104,24 @@
 
       <div class="col-md-4 p-3" data-controller="project">
         <div class="project">
-          <%= image_tag 'project/project_devine_le_champion.webp', alt: 'Devine le Champion', width: '100%' %>
+          <%= image_tag 'project/devine_le_champion_508.webp',
+              srcset: {
+                asset_path('project/devine_le_champion_208.webp') => '208w',
+                asset_path('project/devine_le_champion_288.webp') => '288w',
+                asset_path('project/devine_le_champion_348.webp') => '348w',
+                asset_path('project/devine_le_champion_408.webp') => '408w',
+                asset_path('project/devine_le_champion_508.webp') => '508w',
+                asset_path('project/devine_le_champion_544.webp') => '544w'
+              },
+              sizes: '(max-width: 575px) 544px,
+                      (max-width: 767px) 508px,
+                      (min-width: 768px) and (max-width: 992px) 208px,
+                      (min-width: 993px) and (max-width: 1200px) 288px,
+                      (min-width: 1201px) and (max-width: 1399px) 348px,
+                      (min-width: 1400px) 408px',
+              alt: 'Devine le Champion',
+              title: 'Devine le Champion par Adam' %>
+
 
           <div class="p-3">
             <h4>Devine le Champion</h4>
