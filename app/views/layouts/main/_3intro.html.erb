@@ -1,8 +1,20 @@
 <section id="about-me" class="about-me-section py-5">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div class="col-10 col-md-4">
-        <%= image_tag 'profil.jpg', alt: "Photo de Adam Lamouri", class: "profile-image img-fluid rounded-circle" %>
+      <div class="col-10 col-md-6 text-center">
+        <%= image_tag 'profil/adam_424.webp',
+              srcset: {
+                asset_path('profil/adam_212.webp') => '212w',
+                asset_path('profil/adam_318.webp') => '318w',
+                asset_path('profil/adam_424.webp') => '424w'
+              },
+              sizes: '(max-width: 400px) 212px, (min-width: 401px) and (max-width: 992px) 318px, 424px',
+              width: '424',
+              height: '424',
+              alt: 'Photo de Adam Lamouri',
+              title: 'Moi, votre futur développeur préféré'
+              class: "profile-image rounded-circle" %>
+
       </div>
       <div class="col-10 col-md-6">
         <div>
