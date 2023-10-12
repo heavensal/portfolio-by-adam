@@ -1,5 +1,19 @@
 #projects {
 
+  .more-info {
+    font-size: 12px;
+    &:hover {
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .project-info {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   .project {
     border-radius: 8px;
   }
