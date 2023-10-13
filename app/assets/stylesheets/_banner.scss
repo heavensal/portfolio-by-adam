@@ -6,9 +6,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:240px;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  &.delayed-opacity {
+    opacity:1;
+  }
 
   h1 {
     color: $text-dm;
+    opacity: 0;
+    transition: opacity 2s ease;
+    &.delayed-opacity {
+      opacity:1;
+    }
   }
+
 }

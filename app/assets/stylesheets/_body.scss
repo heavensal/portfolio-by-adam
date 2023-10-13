@@ -201,14 +201,14 @@ body {
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
+  scrollbar-width:thin;
   scrollbar-color: #742D82 #1D1628;
 }
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
+  height: 16px;
+  width: 16px;
 }
 *::-webkit-scrollbar-track {
   border-radius: 0px;
