@@ -4,6 +4,13 @@ html {
   scroll-behavior: smooth;
 }
 
+footer {
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
 .scroll-to-top {
   position: fixed;
   display: none;
