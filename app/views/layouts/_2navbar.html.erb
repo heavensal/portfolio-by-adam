@@ -33,10 +33,10 @@
   </section>
 
   <ul id='responsive-menu' data-navbar-target='menu' class='d-none'>
-    <li><%= link_to "Compétences", "#skills", aria: { label: "Compétences" } %></li>
-    <li><%= link_to "Réalisations", "#projects", aria: { label: "Réalisations" } %></li>
-    <li><%= link_to "Formations", "#education", aria: { label: "Formations" } %></li>
-    <li><%= link_to "Contact", "#contact", aria: { label: "Contact" } %></li>
+    <li data-action='click->navbar#toggle'><%= link_to "Compétences", "#skills", aria: { label: "Compétences" } %></li>
+    <li data-action='click->navbar#toggle'><%= link_to "Réalisations", "#projects", aria: { label: "Réalisations" } %></li>
+    <li data-action='click->navbar#toggle'><%= link_to "Formations", "#education", aria: { label: "Formations" } %></li>
+    <li data-action='click->navbar#toggle'><%= link_to "Contact", "#contact", aria: { label: "Contact" } %></li>
   </ul>
 
 </nav>
