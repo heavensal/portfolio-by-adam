@@ -1,5 +1,3 @@
-/* Style de la navbar */
-
 nav {
   position: sticky;
   top: 0;
@@ -66,8 +64,8 @@ nav {
   top: auto;
   z-index: 1000;
   opacity: 0;
+  width: 100%;
   visibility: hidden;
-  width: 100vw;             // Fixe la largeur à 100vw
   overflow: hidden;
   transform-origin: top;   // Commence l'animation depuis la gauche
   transform: scaleY(0);     // Échelle horizontale réduite à 0
