@@ -44,3 +44,20 @@
 
     </div>
 </section>
+
+<div>
+  <%= form_with url: contact_path, method: :post, local: true do |form| %>
+    <div>
+      <%= form.text_field :name, placeholder: 'Nom' %>
+    </div>
+    <div>
+      <%= form.email_field :email, placeholder: 'Email' %>
+    </div>
+    <div>
+      <%= form.text_area :message, placeholder: 'Message' %>
+    </div>
+    <div>
+      <%= form.submit 'Envoyer' %>
+    </div>
+  <% end %>
+</div>
